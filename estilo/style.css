@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*PALETA DE CORES:
+body: #E27984
+body: #000*/
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body , html{
+    background-color:#d66910;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    top: 50%;
+    left: 50%;
+   
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: calc(ease);
+     transform: translate(-50%, -50%);
+}
+section#login > div#image{
+    display: block;
+    background: orange url(../image/login.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    
+}
+section#login > div#forms{
+    display:block;
+    padding: 10px;
+
+}
+div#forms > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#forms > p{
+    font-size: 0.8em;
+}
+form > div.campo{
+   background-color: #b95502;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0 ;
+}
+div.campo > span{
+    padding: 5px;
+    width: 40px;
+    font-size: 2em;
+    color: black;
+}
+div.campo > input{
+    background-color: #332d29d0;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #332D29;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color: #d66910;
+}
+form > a.butaum{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    padding-top:5px ;
+    margin-top: 5px;
+}
+form > a.butaum:hover{
+    background-color:#d66910;
+}
